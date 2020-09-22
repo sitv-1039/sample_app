@@ -57,3 +57,6 @@ build-iPhoneSimulator/
 .framgia-ci-reports/
 .framgia-ci-result.temp.yml
 /node_modules/
+/log/
+/public/packs/
+/public/packs-test/

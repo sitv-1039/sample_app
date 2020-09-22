@@ -1,0 +1,9 @@
+<!-- Sử đụng provide để gọi đến yield tên :title và truyền giá trị "Help" -->
+<%= provide :title, t("views.title.help") %>
+<h1><%= t("views.help.help") %></h1>
+<p>
+  <%= t("views.help.content1") %>
+  <%= link_to t("views.r_help"), "http://www.railstutorial.org/help" %>.
+  <%= t("views.help.content2") %>
+  <%= link_to t("views.r_book"), "http://www.railstutorial.org/book" %>.
+</p>
