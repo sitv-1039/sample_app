@@ -1,0 +1,8 @@
+<!-- Sử đụng provide để gọi đến yield tên :title và truyền giá trị "Home" -->
+<%= provide :title, t("views.title.home") %>
+<h1><%= t("views.home.sample_app") %></h1>
+<p>
+  <%= t "views.home.content1" %>
+  <%= link_to "Ruby on Rails Tutorial", "http://www.railstutorial.org/" %>
+  <%= t "views.home.content2" %>
+</p>

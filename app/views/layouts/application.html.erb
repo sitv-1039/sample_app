@@ -1,12 +1,21 @@
+<!-- Bổ sung 2 dòng này để có thể chuyển qua lại 2 ngôn ngữ -->
+<%= link_to t("english"), locale: :en %>
+<%= link_to t("vietnamese"), locale: :vi %>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Test1</title>
+    <!-- Sử dụng t(...) để gọi đến biến cấu hình trong locale (en hoặc vi) -->
+    <title><%= yield(:title) %> | <%= t("views.title.title") %></title>
+
+    <!-- giúp giảm thiểu sự giả mạo yêu cầu trên nhiều trang web
+(CSRF) tấn công -->
     <%= csrf_meta_tags %>
+
+    <!-- Content Security Policy(CSP) - dùng để giảm thiểu các cuộc tấn công tập lệnh trên nhiều trang web (XSS). -->
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
   </head>
 
   <body>
