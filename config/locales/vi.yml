@@ -1,4 +1,5 @@
 vi:
+  rail: "Hướng dẫn Ruby on Rails"
   hello: "xin chào"
   english: "Tiếng Anh"
   vietnamese: "Tiếng Việt"
@@ -8,12 +9,15 @@ vi:
     title:
       home: "Trang chủ"
       help: "Giúp đỡ"
+      login: "Đăng nhập"
       title: "Hướng dẫn tạo ứng dụng Ruby on Rails đơn giản"
     help:
       help: "Giúp đỡ"
       content1: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
       content2: "Để nhận trợ giúp về ứng dụng mẫu này, hãy xem"
     home:
+      wellcome: "Chào mừng bạn đến với Ứng dụng mẫu"
       sample_app: "Ứng dụng mẫu"
       content1: "Đây là trang chủ của "
       content2: "ứng dụng mẫu."
+      signup: "Đăng ký ngay!"
