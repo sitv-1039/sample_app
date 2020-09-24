@@ -30,6 +30,7 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  rail: "Ruby on Rails Tutorial"
   hello: "Hello"
   english: "English"
   vietnamese: "Vietnamese"
@@ -39,12 +40,15 @@ en:
     title:
       home: "Home"
       help: "Help"
+      login: "Login"
       title: "Ruby on Rails Tutorial Sample App"
     help:
       help: "Help"
       content1: "Get help on the Ruby on Rails Tutorial at the "
       content2: "To get help on this sample app, see the "
     home:
+      wellcome: "Welcome to the Sample App"
       sample_app: "Sample App"
       content1: "This is the home page for the "
       content2: "sample application."
+      signup: "Sign up now!"
