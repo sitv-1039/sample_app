@@ -1,0 +1,11 @@
+<!-- Sử dụng provide để gọi đến yield tên :title và truyền giá trị "Home" -->
+<%= provide :title, t("views.title.home") %>
+<div class="center jumbotron">
+  <h1><%= t("views.home.wellcome") %></h1>
+  <h2>
+    <%= t"views.home.content1" %>
+    <%= link_to t("rail"), "http://www.railstutorial.org/" %>
+    <%= t "views.home.content2" %>
+  </h2>
+  <%= link_to t("views.home.signup"), "#", class: "btn btn-lg btn-primary" %>
+</div>

@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Test1</title>
+    <title><%= full_title yield :title %></title>
+
+    <!-- giúp giảm thiểu sự giả mạo yêu cầu trên nhiều trang web
+    (CSRF) tấn công -->
     <%= csrf_meta_tags %>
+
+    <!-- Content Security Policy(CSP) - dùng để giảm thiểu các cuộc tấn công tập lệnh trên nhiều trang web (XSS). -->
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
   </head>
-
   <body>
-    <%= yield %>
+    <%= render "layouts/header" %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
