@@ -21,3 +21,14 @@ vi:
       content1: "Đây là trang chủ của "
       content2: "ứng dụng mẫu."
       signup: "Đăng ký ngay!"
+    error:
+      error: "lỗi"
+      count_error: "Form chứa "
+    new:
+      create_account: "Tạo tài khoản!"
+      name: "Tên"
+      password: "Mật khẩu"
+      confirm_password: "Xác nhận mật khẩu"
+      signup: "Đăng ký"
+    show:
+      not_found: "Không tìm thấy người dùng!"

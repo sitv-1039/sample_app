@@ -52,3 +52,14 @@ en:
       content1: "This is the home page for the "
       content2: "sample application."
       signup: "Sign up now!"
+    error:
+      error: "error"
+      count_error: "The form contains "
+    new:
+      create_account: "Create account!"
+      name: "Name"
+      password: "Password"
+      confirm_password: "Password confirmation"
+      signup: "Sign up"
+    show:
+      not_found: "User not found!"
