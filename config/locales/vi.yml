@@ -11,6 +11,11 @@ vi:
       help: "Giúp đỡ"
       login: "Đăng nhập"
       title: "Hướng dẫn tạo ứng dụng Ruby on Rails đơn giản"
+      logout: "Đăng xuất"
+      setting: "Cài đặt"
+      profile: "Hồ sơ"
+      account: "Tài khoản"
+      user: "Người dùng"
     help:
       help: "Giúp đỡ"
       content1: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
@@ -21,3 +26,19 @@ vi:
       content1: "Đây là trang chủ của "
       content2: "ứng dụng mẫu."
       signup: "Đăng ký ngay!"
+    error:
+      error: "lỗi"
+      count_error: "Form chứa %{count} lỗi"
+    new:
+      create_account: "Tạo tài khoản!"
+      name: "Tên"
+      password: "Mật khẩu"
+      confirm_password: "Xác nhận mật khẩu"
+      signup: "Đăng ký"
+    show:
+      not_found: "Không tìm thấy người dùng!"
+    login:
+      email_pass_invalid: "Email/Password không hợp lệ"
+      new_user: "Người dùng mới?"
+    logout:
+      success: "Đăng xuất thành công!"
