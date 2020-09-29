@@ -74,3 +74,18 @@ en:
       new_user: "New user?"
     logout:
       success: "Log out successfully!"
+    edit:
+      edit: "Edit"
+      update: "Update your profile"
+      change: "Change"
+      success: "Profile updated"
+    index:
+      delete_success: "Delete successfully"
+      delete_fail: "Delete fail"
+      all: "All users"
+      delete: "Delete"
+      are_you_sure: "Are you sure?"
+  models:
+    users:
+      please_login: "Please log in."
+
