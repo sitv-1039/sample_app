@@ -39,6 +39,7 @@ vi:
       not_found: "Không tìm thấy người dùng!"
     login:
       email_pass_invalid: "Email/Password không hợp lệ"
+      remember: "Nhớ tôi trên máy tính này"
       new_user: "Người dùng mới?"
     logout:
       success: "Đăng xuất thành công!"
