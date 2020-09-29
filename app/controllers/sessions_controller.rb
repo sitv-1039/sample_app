@@ -5,9 +5,15 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email].downcase)
     if user&.authenticate(params[:session][:password])
       log_in user
-      # remember user
-      params[:session][:remember_me] == "1" ? remember(user) : forget(user)
-      redirect_to user_path(id: user.id)
+      if user.activated?
+        log_in user
+        params[:session][:remember_me] == "1" ? remember(user) : forget(user)
+        redirect_back_or user
+      else
+        message = t "controllers.sessions.please_check_mail"
+        flash[:warning] = message
+        redirect_to root_url
+      end
     else
       flash.now[:danger] = t "views.login.email_pass_invalid"
       render :new

@@ -16,6 +16,8 @@ vi:
       profile: "Hồ sơ"
       account: "Tài khoản"
       user: "Người dùng"
+      reset_password: "Đổi mật khẩu"
+      forgot_password: "Quên mật khẩu"
     help:
       help: "Giúp đỡ"
       content1: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
@@ -35,6 +37,7 @@ vi:
       password: "Mật khẩu"
       confirm_password: "Xác nhận mật khẩu"
       signup: "Đăng ký"
+      send: "Gửi"
     show:
       not_found: "Không tìm thấy người dùng!"
     login:
@@ -43,3 +46,68 @@ vi:
       new_user: "Người dùng mới?"
     logout:
       success: "Đăng xuất thành công!"
+    edit:
+      edit: "Chỉnh sửa"
+      update: "Cập nhật thông tin cá nhân"
+      change: "Thay đổi"
+      success: "Đã cập nhật hồ sơ"
+    index:
+      delete_success: "Xóa thành công"
+      all: "Tất cả người dùng"
+    users:
+      follow: "Theo dõi"
+      unfollow: "Hủy theo dõi"
+    user_mailer:
+      acc_active:
+        content1: "Chào %{name}"
+        content2: "Chào mừng bạn đến với Ứng dụng mẫu! Nhấn vào liên kết bên dưới để kích hoạt tài khoản:"
+        activate: "Kích hoạt"
+      pass_reset:
+        content1: "Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết bên dưới:"
+        content2: "Liên kết này sẽ hết hạn sau hai giờ.
+          Nếu bạn không yêu cầu đặt lại mật khẩu của mình, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
+    micropost:
+      micropost:
+        posted: "Đăng lúc %{time} trước."
+        you_sure: "Bạn chắc chứ?"
+        delete: "Xóa"
+    shared:
+      micro_form:
+        text_content: "Nhập micropost mới..."
+        alert: "Dung lượng tối đa là 5 MB. Vui lòng chọn file nhỏ hơn."
+        post: "Đăng"
+      user_info:
+        view_my_profile: "Xem hồ sơ của tôi"
+        micropost: "micropost"
+  models:
+    users:
+      please_login: "Làm ơn đăng nhập."
+    microposts:
+      valid_image: "phải là một định dạng hình ảnh hợp lệ"
+      should_be_less_than_5MB: "phải nhỏ hơn 5MB"
+  controllers:
+    account_activations:
+      active_success: "Đã kích hoạt tài khoản!"
+      active_fail: "Liên kết kích hoạt không hợp lệ"
+    users:
+      please_check_mail: "Hãy kiểm tra email để kích hoạt tài khoản của bạn."
+    sessions:
+      please_check_mail: "Tài khoản chưa được kích hoạt. Hãy kiểm tra mail để lấy liên kết kích hoạt."
+    passwod_reset:
+      email_send: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu."
+      email_not_found: "Không tìm thấy địa chỉ email."
+      can't_be_empty: "Không được để trống"
+      success: "Mật khẩu đã được đặt lại."
+      expired: "Đặt lại mật khẩu đã hết hạn."
+    micropost:
+      create_success: "Đã tạo Micropost!"
+      delete_success: "Đã xóa Micropost!"
+    user:
+      following: "Đang theo dõi"
+      follower: "Người theo dõi"
+  mailer:
+    user:
+      account_activation:
+        subject: "Kích hoạt tài khoản."
+      password_reset:
+        subject: "Đặt lại mật khẩu"

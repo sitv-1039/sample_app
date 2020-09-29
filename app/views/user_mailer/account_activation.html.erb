@@ -1,0 +1,9 @@
+<h1>Sample App</h1>
+<p>
+  <%= t("views.user_mailer.acc_active.content1", name: @user.name) %>
+</p>
+<p>
+  <%= t "views.user_mailer.acc_active.content2" %>
+</p>
+<%= link_to t("views.user_mailer.acc_active.activate"),
+edit_account_activation_url(@user.activation_token, email: @user.email) %>

@@ -61,6 +61,8 @@ build-iPhoneSimulator/
 /public/packs/
 /public/packs-test/
 
+# Ignore application configuration
+/config/application.yml
 config/settings.local.yml
 config/settings/*.local.yml
 config/environments/*.local.yml
@@ -68,3 +70,6 @@ config/environments/*.local.yml
 db/test.sqlite3
 db/test.sqlite3-0
 db/test.sqlite3-1
+
+# Ignore uploaded test images.
+/storage

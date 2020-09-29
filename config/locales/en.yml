@@ -1,34 +1,3 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   "true": "foo"
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
   rail: "Ruby on Rails Tutorial"
   hello: "Hello"
@@ -47,6 +16,8 @@ en:
       profile: "Profile"
       account: "Account"
       user: "User"
+      reset_password: "Reset password"
+      forgot_password: "Forgot password"
     help:
       help: "Help"
       content1: "Get help on the Ruby on Rails Tutorial at the "
@@ -66,6 +37,7 @@ en:
       password: "Password"
       confirm_password: "Password confirmation"
       signup: "Sign up"
+      send: "Send"
     show:
       not_found: "User not found!"
     login:
@@ -74,3 +46,69 @@ en:
       new_user: "New user?"
     logout:
       success: "Log out successfully!"
+    edit:
+      edit: "Edit"
+      update: "Update your profile"
+      change: "Change"
+      success: "Profile updated"
+    index:
+      delete_success: "Delete successfully"
+      all: "All users"
+    users:
+      follow: "Follow"
+      unfollow: "Unfollow"
+    user_mailer:
+      acc_active:
+        content1: "Hi %{name}"
+        content2: "Welcome to the Sample App! Click on the link below to activate your account:"
+        activate: "Activate"
+      pass_reset:
+        content1: "To reset your password click the link below:"
+        content2: "This link will expire in two hours.
+          If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+    micropost:
+      micropost:
+        posted: "Posted %{time} ago."
+        you_sure: "You sure?"
+        delete: "Delete"
+    shared:
+      micro_form:
+        text_content: "Compose new micropost..."
+        alert: "Maximum file size is 5MB. Please choose a smaller file."
+        post: "Post"
+      user_info:
+        view_my_profile: "view my profile"
+        micropost: "micropost"
+  models:
+    users:
+      please_login: "Please log in."
+    microposts:
+      valid_image: "must be a valid image format"
+      should_be_less_than_5MB: "should be less than 5MB"
+  controllers:
+    account_activations:
+      active_success: "Account activated!"
+      active_fail: "Invalid activation link"
+    users:
+      please_check_mail: "Please check your email to activate your account."
+    sessions:
+      please_check_mail: "Account not activated. Check your email for the activation link."
+    password_reset:
+      email_send: "Email sent with password reset instructions"
+      email_not_found: "Email address not found"
+      can't_be_empty: "Can't be empty"
+      success: "Password has been reset."
+      expired: "Password reset has expired"
+    micropost:
+      create_success: "Micropost created!"
+      delete_success: "Micropost deleted!"
+    user:
+      following: "Following"
+      follower: "Follower"
+  mailer:
+    user:
+      account_activation:
+        subject: "Account activation"
+      password_reset:
+        subject: "Password reset"
+

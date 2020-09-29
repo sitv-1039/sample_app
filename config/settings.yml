@@ -1,3 +1,6 @@
-email:
-  max: 250
-  min: 1
+max_length_250: 250
+max_length_140: 140
+min_length_1: 1
+size_80: 80
+size_50: 50
+value_500: 500

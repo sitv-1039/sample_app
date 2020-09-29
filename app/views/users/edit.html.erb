@@ -1,0 +1,14 @@
+<% provide(:title, t("views.edit.edit")) %>
+<% provide(:button_text, t("views.edit.edit")) %>
+<h1><%= t "views.edit.update" %></h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= render "form" %>
+    <div class="gravatar_edit">
+      <%= gravatar_for @user %>
+      <a href="http://gravatar.com/emails" target="_blank">
+        <%= t "views.edit.change" %>
+      </a>
+    </div>
+  </div>
+</div>

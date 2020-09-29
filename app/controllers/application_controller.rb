@@ -1,6 +1,21 @@
 class ApplicationController < ActionController::Base
   include SessionsHelper
+
   before_action :set_locale_before_action
+
+  def default_url_options
+    {locale: I18n.locale}
+  end
+
+  # Before filters
+  # Confirms a logged-in user.
+  def logged_in_user
+    return if logged_in?
+
+    store_location
+    flash[:danger] = t "models.users.please_login"
+    redirect_to login_url
+  end
 
   private
 
