@@ -16,6 +16,8 @@ vi:
       profile: "Hồ sơ"
       account: "Tài khoản"
       user: "Người dùng"
+      reset_password: "Đổi mật khẩu"
+      forgot_password: "Quên mật khẩu"
     help:
       help: "Giúp đỡ"
       content1: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
@@ -35,6 +37,7 @@ vi:
       password: "Mật khẩu"
       confirm_password: "Xác nhận mật khẩu"
       signup: "Đăng ký"
+      send: "Gửi"
     show:
       not_found: "Không tìm thấy người dùng!"
     login:
@@ -51,15 +54,18 @@ vi:
     index:
       delete_success: "Xóa thành công"
       delete_fail: "Xóa thất bại"
-      all: "Tất cả người dùng"
       delete: "Xóa"
       are_you_sure: "Bạn có chắc chắn?"
       all: "Tất cả người dùng"
     user_mailer:
       acc_active:
         content1: "Chào %{name}"
-        content2: "Chào mừng bạn đến với Ứng dụng mẫu! Để kích hoạt tài khoản của bạn, hãy nhấn vào liên kết bên dưới:"
+        content2: "Chào mừng bạn đến với Ứng dụng mẫu! Nhấn vào liên kết bên dưới để kích hoạt tài khoản:"
         activate: "Kích hoạt"
+      pass_reset:
+        content1: "Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết bên dưới:"
+        content2: "Liên kết này sẽ hết hạn sau hai giờ.
+          Nếu bạn không yêu cầu đặt lại mật khẩu của mình, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
   models:
     users:
       please_login: "Làm ơn đăng nhập."
@@ -71,7 +77,15 @@ vi:
       please_check_mail: "Hãy kiểm tra email để kích hoạt tài khoản của bạn."
     sessions:
       please_check_mail: "Tài khoản chưa được kích hoạt. Hãy kiểm tra mail để lấy liên kết kích hoạt."
+    password_reset:
+      email_send: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu."
+      email_not_found: "Không tìm thấy địa chỉ email."
+      can't_be_empty: "Không được để trống"
+      success: "Mật khẩu đã được đặt lại."
+      expired: "Đặt lại mật khẩu đã hết hạn."
   mailer:
     user:
       account_activation:
         subject: "Kích hoạt tài khoản."
+      password_reset:
+        subject: "Đặt lại mật khẩu"
