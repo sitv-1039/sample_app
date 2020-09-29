@@ -42,6 +42,11 @@ en:
       help: "Help"
       login: "Login"
       title: "Ruby on Rails Tutorial Sample App"
+      logout: "Log out"
+      setting: "Setting"
+      profile: "Profile"
+      account: "Account"
+      user: "User"
     help:
       help: "Help"
       content1: "Get help on the Ruby on Rails Tutorial at the "
@@ -54,7 +59,7 @@ en:
       signup: "Sign up now!"
     error:
       error: "error"
-      count_error: "The form contains "
+      count_error: "The form contains %{count} error"
     new:
       create_account: "Create account!"
       name: "Name"
@@ -63,3 +68,8 @@ en:
       signup: "Sign up"
     show:
       not_found: "User not found!"
+    login:
+      email_pass_invalid: "Invalid email/password combination"
+      new_user: "New user?"
+    logout:
+      success: Log out successfully!
