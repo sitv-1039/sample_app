@@ -70,6 +70,7 @@ en:
       not_found: "User not found!"
     login:
       email_pass_invalid: "Invalid email/password combination"
+      remember: "Remember me on this computer"
       new_user: "New user?"
     logout:
-      success: Log out successfully!
+      success: "Log out successfully!"
