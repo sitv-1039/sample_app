@@ -1,6 +1,11 @@
 class ApplicationController < ActionController::Base
   include SessionsHelper
+
   before_action :set_locale_before_action
+
+  def default_url_options
+    {locale: I18n.locale}
+  end
 
   private
 

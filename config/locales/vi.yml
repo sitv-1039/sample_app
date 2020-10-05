@@ -43,3 +43,17 @@ vi:
       new_user: "Người dùng mới?"
     logout:
       success: "Đăng xuất thành công!"
+    edit:
+      edit: "Chỉnh sửa"
+      update: "Cập nhật thông tin cá nhân"
+      change: "Thay đổi"
+      success: "Đã cập nhật hồ sơ"
+    index:
+      delete_success: "Xóa thành công"
+      delete_fail: "Xóa thất bại"
+      all: "Tất cả người dùng"
+      delete: "Xóa"
+      are_you_sure: "Bạn có chắc chắn?"
+  models:
+    users:
+      please_login: "Làm ơn đăng nhập."
