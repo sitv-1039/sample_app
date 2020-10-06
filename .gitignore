@@ -69,3 +69,6 @@ config/application.yml
 db/test.sqlite3
 db/test.sqlite3-0
 db/test.sqlite3-1
+
+# Ignore application configuration
+/config/application.yml

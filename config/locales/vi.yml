@@ -54,6 +54,24 @@ vi:
       all: "Tất cả người dùng"
       delete: "Xóa"
       are_you_sure: "Bạn có chắc chắn?"
+      all: "Tất cả người dùng"
+    user_mailer:
+      acc_active:
+        content1: "Chào %{name}"
+        content2: "Chào mừng bạn đến với Ứng dụng mẫu! Để kích hoạt tài khoản của bạn, hãy nhấn vào liên kết bên dưới:"
+        activate: "Kích hoạt"
   models:
     users:
       please_login: "Làm ơn đăng nhập."
+  controllers:
+    account_activations:
+      active_success: "Đã kích hoạt tài khoản!"
+      active_fail: "Liên kết kích hoạt không hợp lệ"
+    users:
+      please_check_mail: "Hãy kiểm tra email để kích hoạt tài khoản của bạn."
+    sessions:
+      please_check_mail: "Tài khoản chưa được kích hoạt. Hãy kiểm tra mail để lấy liên kết kích hoạt."
+  mailer:
+    user:
+      account_activation:
+        subject: "Kích hoạt tài khoản."
