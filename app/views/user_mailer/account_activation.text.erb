@@ -1,6 +1,4 @@
 <%= t("views.user_mailer.acc_active.content1",name: @user.name) %>
-
 <%= t "views.user_mailer.acc_active.content2" %>
-
 <%= edit_account_activation_url(@user.activation_token, email:
 @user.email) %>
